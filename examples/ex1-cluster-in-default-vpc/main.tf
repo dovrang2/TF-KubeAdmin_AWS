@@ -1,8 +1,4 @@
-provider "aws" {
-  region = var.region
-}
-
 module "cluster" {
-  source  = "weibeld/kubeadm/aws"
-  version = "~> 0.2"
+  source = "github.com/dovrang2/TF-KubeAdmin_AWS?ref=<ref>
+  # ...
 }
